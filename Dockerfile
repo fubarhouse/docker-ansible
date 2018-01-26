@@ -11,10 +11,7 @@ RUN apt-get update \
        python python-yaml python-paramiko python-jinja2 python-httplib2 \
        python-software-properties software-properties-common \
        rsyslog sudo build-essential gcc libc-dev rsync openssh-server openssl \
-       python-dev python-setuptools libssl-dev libffi-dev \
-    && rm -Rf /var/lib/apt/lists/* \
-    && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
-    && apt-get clean
+       python-dev python-setuptools libssl-dev libffi-dev
 RUN pip install setuptools
 RUN pip install pyopenssl==0.13.1 pyasn1 ndg-httpsclient
 RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
@@ -24,15 +21,19 @@ RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 RUN add-apt-repository ppa:git-core/ppa
 
 # Install Ansible
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
+RUN apt-get install -y --no-install-recommends \
        zlib1g-dev libncurses5-dev systemd-services \
     && rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
+
+RUN rm -Rf /var/lib/apt/lists/* \
+    && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
- RUN pip install urllib3 cryptography
- RUN pip install --upgrade pip virtualenv virtualenvwrapper
- RUN pip install ansible
+
+RUN pip install --upgrade pip
+RUN pip install virtualenv virtualenvwrapper
+RUN pip install urllib3 cryptography
+RUN pip install ansible
 
 COPY initctl_faker .
 RUN chmod +x initctl_faker && rm -fr /sbin/initctl && ln -s /initctl_faker /sbin/initctl
