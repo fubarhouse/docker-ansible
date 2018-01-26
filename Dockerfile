@@ -28,8 +28,11 @@ RUN wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz \
 RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 #ADD etc/rsyslog.d/50-default.conf /etc/rsyslog.d/50-default.conf
 
+# Upgrade PIP
+RUN pip install -i https://pypi.python.org/simple/ --upgrade pip
+
 # Install Ansible
-RUN pip install urllib3 pyOpenSSL ndg-httpsclient pyasn1 ansible cryptography
+RUN pip install pyOpenSSL ndg-httpsclient pyasn1 ansible cryptography
 
 COPY initctl_faker .
 RUN chmod +x initctl_faker && rm -fr /sbin/initctl && ln -s /initctl_faker /sbin/initctl
