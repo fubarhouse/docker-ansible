@@ -21,14 +21,17 @@ RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 
 # Install Node from source
 RUN git clone https://github.com/nodejs/node.git
-RUN cd node && git checkout v4.x
-RUN ./configure && make && make install
+RUN cd node && \
+    git checkout v4.x && \
+    ./configure && \
+    make && \
+    make install
+
+# Upgrade PIP
+RUN pip install -i https://pypi.python.org/simple/ --upgrade pip
 
 # Install Ansible
 RUN pip install urllib3 pyOpenSSL ndg-httpsclient pyasn1 ansible cryptography
-
-COPY initctl_faker .
-RUN chmod +x initctl_faker && rm -fr /sbin/initctl && ln -s /initctl_faker /sbin/initctl
 
 # Install Ansible inventory file
 RUN mkdir /etc/ansible
