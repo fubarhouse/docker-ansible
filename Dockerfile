@@ -18,6 +18,8 @@ RUN pip install setuptools
 RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 #ADD etc/rsyslog.d/50-default.conf /etc/rsyslog.d/50-default.conf
 
+RUN pip install --upgrade pip
+
 # Install Ansible
 RUN pip install ansible
 
