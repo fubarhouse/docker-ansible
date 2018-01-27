@@ -6,10 +6,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        python-software-properties python-pip \
        python-setuptools software-properties-common \
-       rsyslog systemd systemd-cron sudo \
-    && rm -Rf /var/lib/apt/lists/* \
-    && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
-    && apt-get clean
+       rsyslog systemd systemd-cron sudo
 RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 #ADD etc/rsyslog.d/50-default.conf /etc/rsyslog.d/50-default.conf
 
