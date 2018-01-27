@@ -6,32 +6,25 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install dependencies.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       sudo curl gnupg2 \
-    && rm -rf /var/lib/apt/lists/* \
-    && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
-    && apt-get clean
+       sudo curl gnupg2
 
 # Install Ansible via pip.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       build-essential libffi-dev libssl-dev python-dev \
-       zlib1g-dev libncurses5-dev systemd python-setuptools curl \
-    && rm -rf /var/lib/apt/lists/* \
-    && rm -Rf /usr/share/doc && rm -Rf /usr/share/man
-
-# Installs nodejs
-RUN curl -sL http://deb.nodesource.com/setup_6.x | sh - && \
-    apt-get install -y nodejs
-RUN node --version
-RUN npm --version
+       build-essential libffi-dev libssl-dev python-dev python-pip \
+       zlib1g-dev libncurses5-dev systemd python-setuptools curl
 
 # Unfortunately, PIP 1.x simply won't do anymore...
+RUN pip install --upgrade pip
+
 RUN curl https://bootstrap.pypa.io/get-pip.py | python;
 RUN pip install urllib3 pyOpenSSL ndg-httpsclient pyasn1 cryptography
 RUN pip install ansible
 
 # General clean-up
-RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/* \
+    && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
+    && apt-get clean
 
 COPY initctl_faker .
 RUN chmod +x initctl_faker && rm -fr /sbin/initctl && ln -s /initctl_faker /sbin/initctl
