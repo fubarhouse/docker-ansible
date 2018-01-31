@@ -25,7 +25,7 @@ These images are maintained with the best version of Python and Ansible for long
 | utopic    | Ubuntu 14.10     |        |         | Yes    |
 | vivid     | Ubuntu 15.04     |        |         | Yes    |
 | wily      | Ubuntu 15.10     |        |         | Yes    |
-| xenial    | Ubuntu 16.04     | 2.7.11 | 2.0.0.2 | Yes    |
+| xenial    | Ubuntu 16.04     | 2.7.12 | 2.4.2.0 | Yes    |
 | yakkety   | Ubuntu 16.10     |        |         | Yes    |
 | zesty     | Ubuntu 17.04     |        |         | Yes    |
 | artful    | Ubuntu 17.10     |        |         | Yes    |
