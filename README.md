@@ -18,7 +18,7 @@ These images are maintained with the best version of Python and Ansible for long
 | fedora-26 | Fedora 26        |        |         | Yes    |
 | fedora-27 | Fedora 27        |        |         | Yes    |
 | precise   | Ubuntu 12.04     |        |         | Yes    |
-| quantal   | Ubuntu 12.10     |        |         | Yes    |
+| quantal   | Ubuntu 12.10     | 2.7.3  | 2.4.3.0 | Yes    |
 | raring    | Ubuntu 13.04     |        |         | Yes    |
 | saucy     | Ubuntu 13.10     |        |         | Yes    |
 | trusty    | Ubuntu 14.04     |        |         | Yes    |
