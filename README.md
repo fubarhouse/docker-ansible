@@ -4,10 +4,18 @@ A single repository for all the Docker images for Ansible role testing.
 
 These images are maintained with the best version of Python and Ansible for long term support - despite the nessesity.
 
+ansible 
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.6/site-packages/ansible
+  executable location = /usr/bin/ansible
+  python version =  (r266:84292, Aug 18 2016, 15:13:37) [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+
+
 | Branch    | Operating System | Python | Ansible | Usable |
 | --------- |------------------| ------ | ------- |------- |
 | centos-5  | CentOS 5         |        |         | No     |
-| centos-6  | CentOS 6         |        |         | Yes    |
+| centos-6  | CentOS 6         | 2.6.6  | 2.4.2.0 | Yes    |
 | centos-7  | CentOS 7         |        |         | Yes    |
 | wheezy    | Debian 7         |        |         | Yes    |
 | jessie    | Debian 8         |        |         | Yes    |
