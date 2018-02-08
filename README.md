@@ -4,13 +4,7 @@ A single repository for all the Docker images for Ansible role testing.
 
 These images are maintained with the best version of Python and Ansible for long term support - despite the nessesity.
 
-ansible 
-  config file = /etc/ansible/ansible.cfg
-  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/lib/python2.6/site-packages/ansible
-  executable location = /usr/bin/ansible
-  python version =  (r266:84292, Aug 18 2016, 15:13:37) [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
-
+## Images
 
 | Branch    | Operating System | Python | Ansible | Usable |
 | --------- |------------------| ------ | ------- |------- |
@@ -38,3 +32,11 @@ ansible
 | zesty     | Ubuntu 17.04     |        |         | Yes    |
 | artful    | Ubuntu 17.10     |        |         | Yes    |
 | bionic    | Ubuntu 18.04     |        |         | Yes    |
+
+## Credit
+
+Some image files have been copied from existing repositories available under an MIT license.
+
+The foundation for a lot of these images can only be credited to the fantastic work by [Jeff Geerling](http://jeffgeerling.com/).
+
+I have simply consolidated and expanded for personal use for testing my own Ansible roles.
