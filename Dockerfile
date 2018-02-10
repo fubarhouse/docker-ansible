@@ -8,7 +8,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        software-properties-common curl \
        python-setuptools init unzip \
-       rsync rsyslog systemd sudo
+       rsync rsyslog systemd sudo xz-utils
 RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 #ADD etc/rsyslog.d/50-default.conf /etc/rsyslog.d/50-default.conf
 
