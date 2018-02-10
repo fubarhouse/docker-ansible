@@ -1,14 +1,14 @@
 FROM ubuntu:16.10
 MAINTAINER Karl Hepworth
 
-RUN sed -i.bak -r 's/(archive|security).ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 
 # Install dependencies.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        software-properties-common curl \
-       python-setuptools init unzip \
-       rsync rsyslog systemd sudo xz-utils
+       python-dev python-setuptools init unzip \
+       rsync rsyslog systemd sudo
 RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 #ADD etc/rsyslog.d/50-default.conf /etc/rsyslog.d/50-default.conf
 
