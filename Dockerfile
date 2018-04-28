@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:sid
 MAINTAINER Karl Hepworth
 
 ENV DEBIAN_FRONTEND noninteractive
