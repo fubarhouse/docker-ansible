@@ -7,7 +7,9 @@ RUN add-apt-repository ppa:fkrull/deadsnakes-python2.7
 # Install our dependencies
 RUN apt-get update && \
     apt-get install -y \
-      wget gcc make python-pip python2.7
+      wget gcc make python-pip
+
+RUN apt-get install --force-yes python2.7
 
 RUN pip install -i https://pypi.python.org/simple/ --upgrade pip
 
