@@ -1,18 +1,13 @@
 FROM geerlingguy/docker-ubuntu1404-ansible
 MAINTAINER Karl Hepworth
 
+# Add a PPA for Python
+RUN add-apt-repository ppa:fkrull/deadsnakes-python2.7
+
 # Install our dependencies
 RUN apt-get update && \
-    apt-get install -y wget gcc make python-pip
-
-# Upgrade python to 2.7.13
-RUN wget https://www.python.org/ftp/python/2.7.13/Python-2.7.13.tgz \
-    && tar zxf ./Python-2.7.13.tgz \
-    && cd Python-2.7.13 \
-    && ./configure \
-    && make \
-    && make install \
-    && rm -f ../Python-2.7.13.tgz
+    apt-get install -y \
+      wget gcc make python-pip python2.7
 
 RUN pip install -i https://pypi.python.org/simple/ --upgrade pip
 
