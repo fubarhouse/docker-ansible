@@ -4,6 +4,11 @@ MAINTAINER Karl Hepworth
 # Convert sources to legacy.
 RUN sed -i.bak -r 's/(archive|security).ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 
+# Add a PPA for Python
+RUN add-apt-repository ppa:fkrull/deadsnakes-python2.7
+    && apt-get update \
+    && apt-get install --force-yes --yes python2.7
+
 # Install dependencies.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
