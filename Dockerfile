@@ -16,7 +16,7 @@ RUN pip install -i https://pypi.python.org/simple/ --upgrade pip
 # Install Ansible
 RUN apt-get remove -y ansible
 RUN pip install urllib3 pyOpenSSL ndg-httpsclient pyasn1 cryptography
-RUN pip install virtualenv virtualenvwrapper
+# RUN pip install virtualenv virtualenvwrapper
 RUN pip install ansible
 
 # General cleanup.
