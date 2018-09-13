@@ -33,7 +33,7 @@ These images are maintained with the best version of Python and Ansible for long
 | zesty     | Ubuntu 17.04     | 2.7.13  | 2.4.2.0 | 27/01/2018 | Yes             |
 | artful    | Ubuntu 17.10     | 2.7.14  | 2.4.2.0 | 27/01/2018 | Yes             |
 | bionic    | Ubuntu 18.04     | 2.7.14+ | 2.4.2.0 | 27/01/2018 | Yes             |
-| cosmic    | Ubuntu 18.10     | 2.7.15  | 2.5.5.0 | 28/06/2018 | Yes             |
+| cosmic    | Ubuntu 18.10     | 2.7.15+ | 2.6.4.0 | 13/09/2018 | Yes             |
 *Notes*:
 
 * CentOS-5 simply needs work, but given the state of CentOS 6 it's unlikely to progress.
