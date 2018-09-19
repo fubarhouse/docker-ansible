@@ -1,4 +1,4 @@
-FROM fedora:28
+FROM fedora:29
 MAINTAINER Karl Hepworth
 ENV container=docker
 
