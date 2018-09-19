@@ -9,7 +9,7 @@ These images are maintained with the best version of Python and Ansible for long
 | Branch    | Operating System | Python  | Ansible | Date       | Usable          |
 | --------- |------------------| ------- | ------- |----------- | --------------- |
 | centos-5  | CentOS 5         |         |         |            | No              |
-| centos-6  | CentOS 6         | 2.6.6   | 2.4.2.0 | 27/01/2018 | Yes             |
+| centos-6  | CentOS 6         | 2.6.6   | 2.6.3.0 | 18/09/2018 | Yes             |
 | centos-7  | CentOS 7         |         |         | 27/01/2018 | Yes             |
 | wheezy    | Debian 7         | 2.7.3   | 2.4.2.0 | 27/01/2018 | Yes             |
 | jessie    | Debian 8         | 2.7.9   | 2.4.2.0 | 27/01/2018 | Yes             |
