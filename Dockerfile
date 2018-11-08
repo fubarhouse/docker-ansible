@@ -4,7 +4,7 @@ MAINTAINER Karl Hepworth
 # Install dependencies.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       python-software-properties python-pip \
+       python-pip \
        python-setuptools software-properties-common \
        rsyslog systemd systemd-cron sudo
 
