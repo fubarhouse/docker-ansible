@@ -26,15 +26,16 @@ These images are maintained with the best version of Python and Ansible for long
 | raring    | Ubuntu 13.04     | 2.7.4     | 2.4.2.0 | 26/01/2018 | Yes             |
 | saucy     | Ubuntu 13.10     | 2.7.5+    | 2.4.2.0 | 26/01/2018 | Not recommended |
 | trusty    | Ubuntu 14.04     | 2.7.12    | 2.5.2.0 | 10/05/2018 | Yes             |
-| utopic    | Ubuntu 14.10     | 2.7.10    | 2.4.2.0 | 26/01/2018 | Yes             |
-| vivid     | Ubuntu 15.04     | 2.7.9     | 2.4.2.0 | 27/01/2018 | Yes             |
-| wily      | Ubuntu 15.10     | 2.7.10    | 2.4.2.0 | 26/01/2018 | Yes             |
-| xenial    | Ubuntu 16.04     | 2.7.12    | 2.4.2.0 | 31/01/2018 | Yes             |
-| yakkety   | Ubuntu 16.10     | 2.7.12+   | 2.4.3.0 | 10/02/2018 | Yes             |
-| zesty     | Ubuntu 17.04     | 2.7.13    | 2.4.2.0 | 27/01/2018 | Yes             |
-| artful    | Ubuntu 17.10     | 2.7.14    | 2.4.2.0 | 27/01/2018 | Yes             |
-| bionic    | Ubuntu 18.04     | 2.7.15rc1 | 2.7.1.0 | 08/11/2018 | Yes             |
-| cosmic    | Ubuntu 18.10     | 2.7.15+   | 2.7.1.0 | 08/11/2018 | Yes             |
+| utopic    | Ubuntu 14.10     | 2.7.10    | 2.7.4.0 | 06/12/2018 | Yes             |
+| vivid     | Ubuntu 15.04     | 2.7.9     | 2.7.4.0 | 06/12/2018 | Yes             |
+| wily      | Ubuntu 15.10     | 2.7.10    | 2.7.4.0 | 06/12/2018 | Yes             |
+| xenial    | Ubuntu 16.04     | 2.7.12    | 2.7.4.0 | 06/12/2018 | Yes             |
+| yakkety   | Ubuntu 16.10     | 2.7.12+   | 2.7.4.0 | 06/12/2018 | Yes             |
+| zesty     | Ubuntu 17.04     | 2.7.13    | 2.7.4.0 | 06/12/2018 | Yes             |
+| artful    | Ubuntu 17.10     | 2.7.14    | 2.7.4.0 | 06/12/2018 | Yes             |
+| bionic    | Ubuntu 18.04     | 2.7.15rc1 | 2.7.4.0 | 06/12/2018 | Yes             |
+| cosmic    | Ubuntu 18.10     | 2.7.15+   | 2.7.4.0 | 06/12/2018 | Yes             |
+
 *Notes*:
 
 * CentOS-5 simply needs work, but given the state of CentOS 6 it's unlikely to progress.
