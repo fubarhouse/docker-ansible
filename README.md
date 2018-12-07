@@ -11,10 +11,10 @@ These images are maintained with the best version of Python and Ansible for long
 | centos-5  | CentOS 5         |           |         |            | No              |
 | centos-6  | CentOS 6         | 2.6.6     | 2.6.3.0 | 18/09/2018 | Yes             |
 | centos-7  | CentOS 7         |           |         | 27/01/2018 | Yes             |
-| wheezy    | Debian 7         | 2.7.3     | 2.4.2.0 | 27/01/2018 | Yes             |
-| jessie    | Debian 8         | 2.7.9     | 2.4.2.0 | 27/01/2018 | Yes             |
-| stretch   | Debian 9         | 2.7.13    | 2.4.2.0 | 27/01/2018 | Yes             |
-| buster    | Debian 10        | 2.7.16+   | 2.7.0.0 | 08/10/2018 | Yes             |
+| wheezy    | Debian 7         | 2.7.3     | 2.7.4.0 | 06/12/2018 | Yes             |
+| jessie    | Debian 8         | 2.7.9     | 2.7.4.0 | 06/12/2018 | Yes             |
+| stretch   | Debian 9         | 2.7.13    | 2.7.4.0 | 06/12/2018 | Yes             |
+| buster    | Debian 10        | 2.7.15+   | 2.7.4.0 | 06/12/2018 | Yes             |
 | fedora-24 | Fedora 24        | 2.7.13    | 2.7.4.0 | 06/12/2018 | Yes             |
 | fedora-25 | Fedora 25        | 2.7.13    | 2.7.4.0 | 06/12/2018 | Yes             |
 | fedora-26 | Fedora 26        | 2.7.15    | 2.7.4.0 | 06/12/2018 | Yes             |
