@@ -36,6 +36,7 @@ These images are maintained with the best version of Python and Ansible for long
 | artful    | Ubuntu 17.10     | 2.7.14    | 2.7.4.0 | 06/12/2018 | Yes         |
 | bionic    | Ubuntu 18.04     | 2.7.15rc1 | 2.7.4.0 | 06/12/2018 | Yes         |
 | cosmic    | Ubuntu 18.10     | 2.7.15+   | 2.7.4.0 | 06/12/2018 | Yes         |
+| disco     | Ubuntu 19.04     |           |         |   /  /     | No          |
 
 *Notes*:
 
