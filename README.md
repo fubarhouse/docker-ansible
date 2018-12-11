@@ -49,3 +49,4 @@ The foundation for a lot of these images can only be credited to the fantastic w
 
 This repository is a consolidated set of repositories as well as many others for personal use for testing my own Ansible roles.
 
+If you're here, you may also be interested in my [Ansible Role Tester](https://github.com/fubarhouse/ansible-role-tester).
