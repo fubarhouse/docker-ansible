@@ -38,8 +38,8 @@ These images are maintained with the best version of Python and Ansible for long
 
 *Notes*:
 
-* CentOS-5 simply needs work, but given the state of CentOS 6 it's unlikely to progress.
 * Saucy is having some issues connecting to any https service, and deems it virtually unusable. Use at your own discretion.
+* CentOS-5 will not be receiving support..
 
 ## Credit
 
