@@ -47,4 +47,5 @@ Some image files have been copied from existing repositories available under an 
 
 The foundation for a lot of these images can only be credited to the fantastic work by [Jeff Geerling](http://jeffgeerling.com/).
 
-I have simply consolidated and expanded for personal use for testing my own Ansible roles.
+This repository is a consolidated set of repositories as well as many others for personal use for testing my own Ansible roles.
+
