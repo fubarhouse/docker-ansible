@@ -10,8 +10,8 @@ RUN apt-get update \
 # Install Ansible via pip.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       zlib1g-dev libncurses5-dev systemd python-setuptools curl
        build-essential libffi-dev libssl-dev python-dev ca-certificates \
+       zlib1g-dev libncurses5-dev systemd udev python-setuptools curl
 
 # Installs nodejs
 RUN curl -sL http://deb.nodesource.com/setup_6.x | sh - && \
