@@ -11,6 +11,7 @@ RUN apt-get update \
 # Install Ansible via pip.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+       apt-transport-https ca-certificates \
        build-essential libffi-dev libssl-dev python-dev python-pip \
        zlib1g-dev libncurses5-dev systemd python-setuptools curl
 
