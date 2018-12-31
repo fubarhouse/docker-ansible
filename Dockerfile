@@ -13,6 +13,15 @@ RUN apt-get update \
        build-essential libffi-dev libssl-dev python-dev ca-certificates \
        zlib1g-dev libncurses5-dev systemd udev python-setuptools curl wget
 
+RUN wget https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz && \
+    tar zxf Python-2.7.15.tgz && \
+    cd Python-2.7.15/ && \
+    ./configure --prefix=/usr/local && \
+    make && \
+    sudo make install && \
+    cd .. && \
+    rm -rf Python-2.7.15
+
 # Installs nodejs
 RUN curl -sL http://deb.nodesource.com/setup_6.x | sh - && \
     apt-get install -y nodejs
