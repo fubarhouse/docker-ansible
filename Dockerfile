@@ -11,7 +11,7 @@ RUN apt-get update \
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        build-essential libffi-dev libssl-dev python-dev ca-certificates \
-       zlib1g-dev libncurses5-dev systemd udev python-setuptools curl
+       zlib1g-dev libncurses5-dev systemd udev python-setuptools curl wget
 
 # Installs nodejs
 RUN curl -sL http://deb.nodesource.com/setup_6.x | sh - && \
