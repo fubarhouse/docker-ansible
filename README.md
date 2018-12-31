@@ -11,7 +11,7 @@ These images are maintained with the best version of Python and Ansible for long
 | centos-5  | CentOS 5         |           |         |            | No          |
 | centos-6  | CentOS 6         | 2.6.6     | 2.6.7.0 | 08/12/2018 | Yes         |
 | centos-7  | CentOS 7         | 2.7.5     | 2.7.4.0 | 08/12/2018 | Yes         |
-| wheezy    | Debian 7         | 2.7.3     | 2.7.4.0 | 06/12/2018 | Yes         |
+| wheezy    | Debian 7         | 2.7.15    | 2.7.5.0 | 31/12/2018 | Yes         |
 | jessie    | Debian 8         | 2.7.9     | 2.7.5.0 | 31/12/2018 | Yes         |
 | stretch   | Debian 9         | 2.7.13    | 2.7.4.0 | 06/12/2018 | Yes         |
 | buster    | Debian 10        | 2.7.15+   | 2.7.4.0 | 06/12/2018 | Yes         |
