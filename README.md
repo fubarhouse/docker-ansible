@@ -13,7 +13,7 @@ These images are maintained with the best version of Python and Ansible for long
 | centos-7  | CentOS 7         | 2.7.5     | 2.7.10.0 | 14/04/2019 | Yes         |
 | wheezy    | Debian 7         | 2.7.15    | 2.7.5.0  | 31/12/2018 | Unsupported |
 | jessie    | Debian 8         | 2.7.9     | 2.7.10.0 | 15/04/2019 | Yes         |
-| stretch   | Debian 9         | 2.7.13    | 2.7.4.0  | 06/12/2018 | Yes         |
+| stretch   | Debian 9         | 2.7.13    | 2.7.10.0 | 15/04/2019 | Yes         |
 | buster    | Debian 10        | 2.7.16    | 2.7.10.0 | 14/04/2019 | Yes         |
 | fedora-24 | Fedora 24        | 2.7.13    | 2.7.10.0 | 14/04/2019 | Yes         |
 | fedora-25 | Fedora 25        | 2.7.13    | 2.7.10.0 | 14/04/2019 | Yes         |
