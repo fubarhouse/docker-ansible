@@ -28,7 +28,7 @@ These images are maintained with the best version of Python and Ansible for long
 | raring    | Ubuntu 13.04     | 2.7.4     | 2.4.2.0  | 26/01/2018 | Unsupported |
 | saucy     | Ubuntu 13.10     | 2.7.5+    | 2.4.2.0  | 26/01/2018 | Unsupported |
 | trusty    | Ubuntu 14.04     | 2.7.14    | 2.7.0.0  | 09/12/2018 | Yes         |
-| utopic    | Ubuntu 14.10     | 2.7.10    | 2.7.4.0  | 06/12/2018 | Yes         |
+| utopic    | Ubuntu 14.10     | 2.7.10    | 2.7.10.0 | 15/04/2019 | Yes         |
 | vivid     | Ubuntu 15.04     | 2.7.9     | 2.7.4.0  | 06/12/2018 | Yes         |
 | wily      | Ubuntu 15.10     | 2.7.10    | 2.7.4.0  | 06/12/2018 | Yes         |
 | xenial    | Ubuntu 16.04     | 2.7.12    | 2.7.4.0  | 06/12/2018 | Yes         |
