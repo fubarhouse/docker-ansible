@@ -31,7 +31,7 @@ These images are maintained with the best version of Python and Ansible for long
 | utopic    | Ubuntu 14.10     | 2.7.10    | 2.7.10.0 | 15/04/2019 | Yes         |
 | vivid     | Ubuntu 15.04     | 2.7.9     | 2.7.10.0 | 15/04/2019 | Yes         |
 | wily      | Ubuntu 15.10     | 2.7.10    | 2.7.10.0 | 15/04/2019 | Yes         |
-| xenial    | Ubuntu 16.04     | 2.7.12    | 2.7.4.0  | 06/12/2018 | Yes         |
+| xenial    | Ubuntu 16.04     | 2.7.12    | 2.7.10.0 | 15/04/2019 | Yes         |
 | yakkety   | Ubuntu 16.10     | 2.7.12+   | 2.7.4.0  | 06/12/2018 | Yes         |
 | zesty     | Ubuntu 17.04     | 2.7.13    | 2.7.4.0  | 06/12/2018 | Yes         |
 | artful    | Ubuntu 17.10     | 2.7.14    | 2.7.10.0 | 14/04/2019 | Yes         |
