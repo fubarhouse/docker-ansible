@@ -42,7 +42,6 @@ These images are maintained with the best version of Python and Ansible for long
 *Notes*:
 
 * CentOS-5 will not be receiving support..
-* Quantal, Raring and Saucy are working, however are not supported anymore.
 
 ## Credit
 
