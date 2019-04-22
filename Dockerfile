@@ -23,8 +23,7 @@ RUN dnf -y update \
 RUN dnf -y install \
     redhat-rpm-config \
     make \
-    python-devel \
-    python-pip \
+    python3-devel \
     openssl-devel \
     which \
     unzip \
@@ -36,6 +35,9 @@ RUN dnf -y install \
     findutils \
     && dnf clean all
 
+RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" \
+    && python3 get-pip.py
+
 # Install Ansible
 RUN pip install ansible
 
@@ -46,5 +48,5 @@ VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
 CMD ["/usr/sbin/init"]
 
 # Report some information
-RUN python --version
+RUN python3 --version
 RUN ansible --version
