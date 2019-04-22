@@ -22,7 +22,7 @@ These images are maintained with the best version of Python and Ansible for long
 | fedora-28 | Fedora 28        | 2.7.15    | 2.7.10.0 | 15/04/2019 | Yes         |
 | fedora-29 | Fedora 29        | 2.7.15    | 2.7.10.0 | 15/04/2019 | Yes         |
 | fedora-30 | Fedora 30        | 2.7.16    | 2.7.10.0 | 20/04/2019 | Yes         |
-| fedora-31 | Fedora 31        | 2.7.16    | 2.7.10.0 | 14/04/2019 | Yes         |
+| fedora-31 | Fedora 31        | 3.7.3     | 2.7.10.0 | 14/04/2019 | Yes         |
 | precise   | Ubuntu 12.04     | 2.7.13    | 2.4.2.0  | 08/12/2018 | Unsupported |
 | quantal   | Ubuntu 12.10     | 2.7.13    | 2.4.2.0  | 04/02/2018 | Unsupported |
 | raring    | Ubuntu 13.04     | 2.7.4     | 2.4.2.0  | 26/01/2018 | Unsupported |
