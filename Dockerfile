@@ -18,12 +18,9 @@ RUN dnf -y update \
 RUN dnf -y install \
     redhat-rpm-config \
     make \
-    python-devel \
-    python-pip \
+    python3-devel \
     openssl-devel \
-    sudo \
     which \
-    python2-dnf \
     unzip \
     tar \
     gcc \
@@ -33,11 +30,13 @@ RUN dnf -y install \
     findutils \
     && dnf clean all
 
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
+RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" \
+    && python get-pip.py
+
 # Install Ansible
 RUN pip install ansible
-
-# Disable requiretty.
-RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
 
 # Install Ansible inventory file.
 RUN mkdir /etc/ansible
