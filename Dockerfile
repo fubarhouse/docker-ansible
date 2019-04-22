@@ -31,8 +31,10 @@ RUN dnf -y install \
     findutils \
     && dnf clean all
 
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
 RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py" \
-    && python3 get-pip.py
+    && python get-pip.py
 
 # Install Ansible
 RUN pip install ansible
@@ -48,5 +50,5 @@ VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
 CMD ["/usr/sbin/init"]
 
 # Report some information
-RUN python3 --version
+RUN python --version
 RUN ansible --version
