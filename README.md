@@ -42,6 +42,9 @@ These images are maintained with the best version of Python and Ansible for long
 *Notes*:
 
 * CentOS-5 will not be receiving support..
+* All images come with zero warranty or official support - and a MIT license.
+* Support state as "yes" is defined as working in automated tests - if an image is using an OS which is EOL no support will be provided in any capacity.
+* The best example of the usage of these images in CI can be found in the Travis CI tests of the [Ansible Role Tester](https://github.com/fubarhouse/ansible-role-tester) project.
 
 ## Credit
 
