@@ -14,7 +14,7 @@ RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 # Install Ansible
 RUN pip install --upgrade pip
 RUN pip install setuptools
-RUN pip install ansible
+RUN pip install ansible ansible-lint
 
 RUN rm -Rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
@@ -30,3 +30,4 @@ RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 # Report version information
 RUN python --version
 RUN ansible --version
+RUN ansible-lint --version
