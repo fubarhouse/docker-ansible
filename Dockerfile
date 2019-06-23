@@ -21,7 +21,7 @@ RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 RUN pip install --upgrade pip
 
 # Install Ansible
-RUN pip install ansible
+RUN pip install ansible ansible-lint
 
 COPY initctl_faker .
 RUN chmod +x initctl_faker && rm -fr /sbin/initctl && ln -s /initctl_faker /sbin/initctl
@@ -33,3 +33,4 @@ RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 # Report some information
 RUN python --version
 RUN ansible --version
+RUN ansible-lint --version
