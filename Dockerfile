@@ -23,7 +23,7 @@ RUN pip install pyopenssl==0.13.1 pyasn1 ndg-httpsclient
 # Install Ansible
 RUN pip install --upgrade pip
 RUN pip install virtualenv virtualenvwrapper
-RUN pip install ansible
+RUN pip install ansible ansible-lint
 
 # Install Ansible inventory file
 RUN mkdir /etc/ansible
@@ -44,3 +44,4 @@ RUN chmod +x initctl_faker && rm -fr /sbin/initctl && ln -s /initctl_faker /sbin
 # Report some information
 RUN python --version
 RUN ansible --version
+RUN ansible-lint --version
