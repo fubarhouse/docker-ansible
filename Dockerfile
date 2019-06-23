@@ -21,7 +21,7 @@ RUN sed -i 's/^\($ModLoad imklog\)/#\1/' /etc/rsyslog.conf
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install urllib3 pyOpenSSL ndg-httpsclient pyasn1
-RUN pip install ansible
+RUN pip install ansible ansible-lint
 RUN rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
@@ -38,3 +38,4 @@ RUN echo "[local]\nlocalhost ansible_connection=local" > /etc/ansible/hosts
 # Report some information
 RUN python --version
 RUN ansible --version
+RUN ansible-lint --version
