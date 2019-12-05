@@ -5,14 +5,14 @@ MAINTAINER Karl Hepworth
 RUN apt-get update && \
     apt-get install -y wget gcc make python-pip
 
-# Upgrade python to 2.7.15
-RUN wget https://www.python.org/ftp/python/2.7.15/Python-2.7.15.tgz \
-    && tar zxf ./Python-2.7.15.tgz \
-    && cd Python-2.7.15 \
+# Upgrade python to 2.7.17
+RUN wget https://www.python.org/ftp/python/2.7.17/Python-2.7.17.tgz \
+    && tar zxf ./Python-2.7.17.tgz \
+    && cd Python-2.7.17 \
     && ./configure \
     && make \
     && make install \
-    && rm -f ../Python-2.7.15.tgz
+    && rm -f ../Python-2.7.17.tgz
 
 RUN pip install -i https://pypi.python.org/simple/ --upgrade pip
 
