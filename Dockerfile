@@ -10,10 +10,7 @@ RUN apt-get update \
 
 # Install Ansible
 RUN pip install urllib3 pyOpenSSL ndg-httpsclient pyasn1 ansible ansible-lint cryptography
-
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-       ansible
+RUN mkdir /etc/ansible
 
 RUN rm -rf /var/lib/apt/lists/* && \
     rm -rf /usr/share/doc && \
