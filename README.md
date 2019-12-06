@@ -23,21 +23,6 @@ These images are maintained with the best version of Python and Ansible for long
 | fedora-29 | Fedora 29        | 3.7.3     | 2.7.10.0 | 15/04/2019 | Yes         |
 | fedora-30 | Fedora 30        | 3.7.3     | 2.7.10.0 | 20/04/2019 | Yes         |
 | fedora-31 | Fedora 31        | 3.7.3     | 2.7.10.0 | 14/04/2019 | Yes         |
-| precise   | Ubuntu 12.04     | 2.7.13    | 2.4.2.0  | 08/12/2018 | Unsupported |
-| quantal   | Ubuntu 12.10     | 2.7.13    | 2.4.2.0  | 04/02/2018 | Unsupported |
-| raring    | Ubuntu 13.04     | 2.7.4     | 2.4.2.0  | 26/01/2018 | Unsupported |
-| saucy     | Ubuntu 13.10     | 2.7.5+    | 2.4.2.0  | 26/01/2018 | Unsupported |
-| trusty    | Ubuntu 14.04     | 2.7.16    | 2.7.0.0  | 15/04/2019 | Yes         |
-| utopic    | Ubuntu 14.10     | 2.7.10    | 2.7.10.0 | 15/04/2019 | Yes         |
-| vivid     | Ubuntu 15.04     | 2.7.9     | 2.7.10.0 | 15/04/2019 | Yes         |
-| wily      | Ubuntu 15.10     | 2.7.10    | 2.7.10.0 | 15/04/2019 | Yes         |
-| xenial    | Ubuntu 16.04     | 2.7.12    | 2.7.10.0 | 15/04/2019 | Yes         |
-| yakkety   | Ubuntu 16.10     | 2.7.12+   | 2.7.10.0 | 15/04/2019 | Yes         |
-| zesty     | Ubuntu 17.04     | 2.7.13    | 2.7.10.0 | 15/04/2019 | Yes         |
-| artful    | Ubuntu 17.10     | 2.7.14    | 2.7.10.0 | 09/05/2019 | Yes         |
-| bionic    | Ubuntu 18.04     | 2.7.15rc1 | 2.7.10.0 | 14/04/2019 | Yes         |
-| cosmic    | Ubuntu 18.10     | 2.7.15+   | 2.7.10.0 | 14/04/2019 | Yes         |
-| disco     | Ubuntu 19.04     | 2.7.16    | 2.7.10.0 | 14/04/2019 | Yes         |
 ble 2.7.10
   config file = /etc/ansible/ansible.cfg
   configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
@@ -45,6 +30,23 @@ ble 2.7.10
   executable location = /usr/local/bin/ansible
   python version = 2.7.14 (default, Sep 23 2017, 22:06:14) [GCC 7.2.0]
 Removing intermediate con
+| ubuntu/precise | Ubuntu 12.04 | 2.7.3     | 2.9.2.0  | 15/12/2019 | Unsupported |
+| ubuntu/quantal | Ubuntu 12.10 | 2.7.13    | 2.4.2.0  | 04/02/2018 | Unbuildable |
+| ubuntu/raring  | Ubuntu 13.04 | 2.7.4     | 2.4.2.0  | 26/01/2018 | Unbuildable |
+| ubuntu/saucy   | Ubuntu 13.10 | 2.7.5+    | 2.4.2.0  | 26/01/2018 | Unbuildable |
+| ubuntu/trusty  | Ubuntu 14.04 | 2.7.16    | 2.7.0.0  | 05/12/2019 | Yes         |
+| ubuntu/utopic  | Ubuntu 14.10 | 2.7.10    | 2.9.2.0  | 05/12/2019 | Yes         |
+| ubuntu/vivid   | Ubuntu 15.04 | 2.7.9     | 2.9.2.0  | 05/12/2019 | Yes         |
+| ubuntu/wily    | Ubuntu 15.10 | 2.7.10    | 2.9.2.0  | 05/12/2019 | Yes         |
+| ubuntu/xenial  | Ubuntu 16.04 | 2.7.12    | 2.9.2.0  | 05/12/2019 | Yes         |
+| ubuntu/yakkety | Ubuntu 16.10 | 2.7.12+   | 2.9.2.0  | 05/12/2019 | Yes         |
+| ubuntu/zesty   | Ubuntu 17.04 | 2.7.13    | 2.9.2.0  | 06/12/2019 | Yes         |
+| ubuntu/artful  | Ubuntu 17.10 | 2.7.14    | 2.9.2.0  | 06/12/2019 | Yes         |
+| ubuntu/bionic  | Ubuntu 18.04 | 2.7.15+   | 2.9.2.0  | 06/12/2019 | Yes         |
+| ubuntu/cosmic  | Ubuntu 18.10 | 2.7.16    | 2.9.2.0  | 06/12/2019 | Yes         |
+| ubuntu/disco   | Ubuntu 19.04 | 2.7.16    | 2.9.2.0  | 06/12/2019 | Yes         |
+| ubuntu/eoan    | Ubuntu 19.10 | 2.7.17rc1 | 2.9.2.0  | 06/12/2019 | Yes         |
+
 *Notes*:
 
 * CentOS-5 will not be receiving support..
