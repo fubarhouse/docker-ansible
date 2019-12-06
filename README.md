@@ -23,13 +23,6 @@ These images are maintained with the best version of Python and Ansible for long
 | fedora-29 | Fedora 29        | 3.7.3     | 2.7.10.0 | 15/04/2019 | Yes         |
 | fedora-30 | Fedora 30        | 3.7.3     | 2.7.10.0 | 20/04/2019 | Yes         |
 | fedora-31 | Fedora 31        | 3.7.3     | 2.7.10.0 | 14/04/2019 | Yes         |
-ble 2.7.10
-  config file = /etc/ansible/ansible.cfg
-  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
-  ansible python module location = /usr/local/lib/python2.7/dist-packages/ansible
-  executable location = /usr/local/bin/ansible
-  python version = 2.7.14 (default, Sep 23 2017, 22:06:14) [GCC 7.2.0]
-Removing intermediate con
 | ubuntu/precise | Ubuntu 12.04 | 2.7.3     | 2.9.2.0  | 15/12/2019 | Unsupported |
 | ubuntu/quantal | Ubuntu 12.10 | 2.7.13    | 2.4.2.0  | 04/02/2018 | Unbuildable |
 | ubuntu/raring  | Ubuntu 13.04 | 2.7.4     | 2.4.2.0  | 26/01/2018 | Unbuildable |
