@@ -38,7 +38,7 @@ These images are maintained with the best version of Python and Ansible for long
 | ubuntu/bionic  | Ubuntu 18.04 | 2.7.15+   | 2.9.2.0  | 06/12/2019 | Yes         |
 | ubuntu/cosmic  | Ubuntu 18.10 | 2.7.16    | 2.9.2.0  | 06/12/2019 | Yes         |
 | ubuntu/disco   | Ubuntu 19.04 | 2.7.16    | 2.9.2.0  | 06/12/2019 | Yes         |
-| ubuntu/eoan    | Ubuntu 19.10 | 2.7.17rc1 | 2.9.2.0  | 06/12/2019 | Yes         |
+| ubuntu/eoan    | Ubuntu 19.10 | 2.7.17    | 2.9.6.0  | 11/04/2020 | Yes         |
 
 *Notes*:
 
